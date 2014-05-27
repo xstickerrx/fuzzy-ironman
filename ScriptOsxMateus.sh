@@ -1,6 +1,5 @@
 #!/bin/bash
 # configuração do ambiente no Mac - OS X Mavericks
-# Defaults selecionados por Augusto Campos
 # Referência: https://github.com/eduardolundgren/dotfiles/blob/master/templates/.osx
 
 
