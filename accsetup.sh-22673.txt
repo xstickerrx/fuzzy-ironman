@@ -1,6 +1,6 @@
 #!/bin/bash
 # configuração do ambiente no Mac - OS X Mavericks
-# Criado por Antonio Mateus - 30/05/2014
+# Defaults selecionados por Augusto Campos
 # Referência: https://github.com/eduardolundgren/dotfiles/blob/master/templates/.osx
 
 
@@ -14,7 +14,7 @@
     defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
     echo "- Clique secundário (direito) com 2 dedos ou no canto inferior direito"
-	defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
+	defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2011
 	defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
 	defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
 	defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
@@ -65,9 +65,6 @@
 
 	echo "- Permitir seleção de texto no Quick Look"
     defaults write com.apple.finder QLEnableTextSelection -bool true
-
-    echo "- Mudar imagem de Captura de PNG para JPG"
-    defaults write com.apple.screencapture type jpg
     
     
 	echo "- Definir Hot Corners"
@@ -111,4 +108,3 @@
     echo -e "\nReferência para criar separadores na dock: \nhttp://br-mac.org/2011/02/barra-de-tarefas-organizando-a-dock-com-separadores-de-icones.html"
     
     echo -e "\nAtenção: Reinicie o Safari e o Terminal quando for conveniente."   
-
